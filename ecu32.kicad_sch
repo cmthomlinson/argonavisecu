@@ -2218,6 +2218,7 @@
     )
   )
 
+
   (junction (at 45.72 129.54) (diameter 0) (color 0 0 0 0)
     (uuid 03bd041f-7191-494d-9b2e-f8d831d58cb2)
   )
@@ -2485,6 +2486,10 @@
   (wire (pts (xy 69.215 203.2) (xy 73.025 203.2))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 1927d859-668f-409a-b9cb-c9fce4324990)
+  )
+  (wire (pts (xy 111.76 183.515) (xy 119.38 183.515))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 19682f3c-e757-4291-986a-43f4fd04f91a)
   )
   (wire (pts (xy 75.565 137.16) (xy 85.725 137.16))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -2998,10 +3003,6 @@
   (wire (pts (xy 118.11 178.435) (xy 118.11 185.42))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid ecd70535-daf8-44d1-8808-bab32a982e45)
-  )
-  (wire (pts (xy 111.76 183.515) (xy 119.38 183.515))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid ee39800d-3c02-4071-8780-2cd3fe34afc0)
   )
   (wire (pts (xy 297.815 200.66) (xy 282.575 200.66))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -4414,7 +4415,7 @@
   (symbol (lib_id "power:+24V") (at 210.185 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 463ec0ba-0dc7-4294-aad7-f9353ad55691)
-    (property "Reference" "#PWR?" (id 0) (at 210.185 105.41 0)
+    (property "Reference" "#PWR0131" (id 0) (at 210.185 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+24V" (id 1) (at 210.185 96.52 0))
@@ -5748,7 +5749,7 @@
   (symbol (lib_id "power:+24V") (at 222.885 123.825 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid c5e3669a-ea3e-4139-b61e-33b01cb5d6b6)
-    (property "Reference" "#PWR?" (id 0) (at 219.075 123.825 0)
+    (property "Reference" "#PWR0174" (id 0) (at 219.075 123.825 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+24V" (id 1) (at 226.06 123.825 90)
@@ -6509,6 +6510,9 @@
     (path "/3dc301a4-5fcb-4d99-9050-5a15f405da53"
       (reference "#PWR0130") (unit 1) (value "GND") (footprint "")
     )
+    (path "/463ec0ba-0dc7-4294-aad7-f9353ad55691"
+      (reference "#PWR0131") (unit 1) (value "+24V") (footprint "")
+    )
     (path "/512d9110-c0b6-4df4-896e-6a1edb814544"
       (reference "#PWR0132") (unit 1) (value "VBUS") (footprint "")
     )
@@ -6635,11 +6639,8 @@
     (path "/b6455615-ad79-4aed-b14f-6c5e8335ffab"
       (reference "#PWR0173") (unit 1) (value "GND") (footprint "")
     )
-    (path "/463ec0ba-0dc7-4294-aad7-f9353ad55691"
-      (reference "#PWR?") (unit 1) (value "+24V") (footprint "")
-    )
     (path "/c5e3669a-ea3e-4139-b61e-33b01cb5d6b6"
-      (reference "#PWR?") (unit 1) (value "+24V") (footprint "")
+      (reference "#PWR0174") (unit 1) (value "+24V") (footprint "")
     )
     (path "/f5a7d4e7-04da-4def-bfcf-0de3408bb5a0"
       (reference "C1") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
